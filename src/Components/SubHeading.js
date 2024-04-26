@@ -7,3 +7,4 @@ export default class SubHeading extends Component {
     )
   }
 }
+// Ejemplo de componente tipo Class, estos ya no se usan más.

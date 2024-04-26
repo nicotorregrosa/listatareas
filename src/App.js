@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Container> 
-      <Heading></Heading>
+      <Heading classroom = "66i" enable = {true}></Heading>
       <SubHeading></SubHeading>
       </Container>
       
