@@ -38,8 +38,11 @@ useEffect(() => {
 }, [tasks] ) // Array de dependencias.
 
 const deleteTask = (taskName) => {
-    let filterArray = tasks.filter(task => task !== taskName)
-    setTasks(filterArray)
+    const index = tasks.findIndex(task => task === taskName);
+    if (index !== -1) {
+      const updatedTasks = [...tasks.slice(0, index), ...tasks.slice(index + 1)];
+      setTasks(updatedTasks);
+    }
 }
 
   return (
